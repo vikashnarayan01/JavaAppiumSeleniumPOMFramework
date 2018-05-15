@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
+  <test name="Test(failed)(failed)">
+    <classes>
+      <class name="com.crm.testcases.ContactsPageTest">
+        <methods>
+          <include name="selectSingleContactsTest"/>
+          <include name="verifyContactsPageLabel"/>
+          <include name="selectMultipleContactsTest"/>
+          <include name="tearDown"/>
+          <include name="validateCreateNewContact"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
