@@ -57,12 +57,12 @@ public class AppiumTest extends TestBase{
 		contactsPage.selectContactsByName("test2 test2");
 	}
 	
-	//@Test(priority=3)
-//	public void selectMultipleContactsTest(){
-//		contactsPage.selectContactsByName("test2 test2");
-//		contactsPage.selectContactsByName("ui uiii");
-//
-//	}
+	@Test(priority=3)
+	public void selectMultipleContactsTest(){
+		contactsPage.selectContactsByName("test2 test2");
+		contactsPage.selectContactsByName("ui uiii");
+
+	}
 	
 	@DataProvider
 	public Object[][] getLoginData(){
