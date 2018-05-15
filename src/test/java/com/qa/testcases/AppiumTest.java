@@ -47,22 +47,22 @@ public class AppiumTest extends TestBase{
 		loginPage = new LoginPage();
 	}
 	
-//	@Test(priority=1)
-//	public void verifyContactsPageLabel(){
-//		Assert.assertTrue(contactsPage.verifyContactsLabel(), "contacts label is missing on the page");
-//	}
-//	
-//	@Test(priority=2)
-//	public void selectSingleContactsTest(){
-//		contactsPage.selectContactsByName("test2 test2");
-//	}
-//	
-//	@Test(priority=3)
-//	public void selectMultipleContactsTest(){
-//		contactsPage.selectContactsByName("test2 test2");
-//		contactsPage.selectContactsByName("ui uiii");
-//
-//	}
+	@Test(priority=1)
+	public void verifyContactsPageLabel(){
+		Assert.assertTrue(contactsPage.verifyContactsLabel(), "contacts label is missing on the page");
+	}
+	
+	@Test(priority=2)
+	public void selectSingleContactsTest(){
+		contactsPage.selectContactsByName("test2 test2");
+	}
+	
+	@Test(priority=3)
+	public void selectMultipleContactsTest(){
+		contactsPage.selectContactsByName("test2 test2");
+		contactsPage.selectContactsByName("ui uiii");
+
+	}
 	
 	@DataProvider
 	public Object[][] getLoginData(){
