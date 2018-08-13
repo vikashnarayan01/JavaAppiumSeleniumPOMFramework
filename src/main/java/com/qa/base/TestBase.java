@@ -29,6 +29,7 @@ public class TestBase {
 	public static AppiumDriver<MobileElement> mobdriver;
 	
 	public TestBase(){
+		
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/qa/config/config.properties");
