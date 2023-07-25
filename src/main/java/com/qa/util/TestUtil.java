@@ -15,22 +15,21 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.qa.base.TestBase;
 
-public class TestUtil extends TestBase{
-	
+public class TestUtil extends TestBase {
+
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
-	
+
 	public static String TESTDATA_SHEET_PATH_APP = "D:\\JavaSelenium\\JavaAppiumFramework\\src\\main\\java\\com\\qa\\testData\\FreeCrmTestData.xlsx";
-	public static String TESTDATA_SHEET_PATH_LOGIN = "D:\\JavaSelenium\\JavaAppiumFramework\\src\\main\\java\\com\\qa\\testData\\loginTestData.xlsx";	
-	
+	public static String TESTDATA_SHEET_PATH_LOGIN = "D:\\JavaSelenium\\JavaAppiumFramework\\src\\main\\java\\com\\qa\\testData\\loginTestData.xlsx";
+
 	static Workbook book;
 	static Sheet sheet;
-	
-	
-	public void switchToFrame(){
+
+	public void switchToFrame() {
 		driver.switchTo().frame("mainpanel");
 	}
-	
+
 	public static Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		try {
@@ -57,13 +56,13 @@ public class TestUtil extends TestBase{
 		}
 		return data;
 	}
-	
+
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
-		
+
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-		
-		}
-	
+
+	}
+
 }

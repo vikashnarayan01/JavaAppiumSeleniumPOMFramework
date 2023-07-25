@@ -16,10 +16,10 @@ public class HomePage extends TestBase {
 
 	@FindBy(xpath = "//a[contains(text(),'Contacts')]")
 	WebElement contactsLink;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'New Contact')]")
 	WebElement newContactLink;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Deals')]")
 	WebElement dealsLink;
 
@@ -30,25 +30,25 @@ public class HomePage extends TestBase {
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	public String verifyHomePageTitle(){
+
+	public String verifyHomePageTitle() {
 		return driver.getTitle();
 	}
-		
-	public boolean verifyCorrectUserName(){
+
+	public boolean verifyCorrectUserName() {
 		return userNameLabel.isDisplayed();
 	}
-	
-	public ContactsPage clickOnContactsLink(){
+
+	public ContactsPage clickOnContactsLink() {
 		contactsLink.click();
 		return new ContactsPage();
 	}
-	
-	public void clickOnNewContactLink(){
+
+	public void clickOnNewContactLink() {
 		Actions action = new Actions(driver);
 		action.moveToElement(contactsLink).build().perform();
 		newContactLink.click();
-		
+
 	}
-	
+
 }
