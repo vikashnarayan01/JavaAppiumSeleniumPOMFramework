@@ -3,7 +3,7 @@ Overview
 This repository contains a Page Object Model (POM) based test automation framework built using Java, Appium, and Selenium. It is designed for automating mobile and web.
 
 ## Features
-Supports Mobile & Web Testing (Android, iOS, and browsers)
+Supports Mobile & Web Testing (Android and browsers)
 Page Object Model (POM) Design Pattern for better maintainability
 TestNG for Test Execution & Reporting
 Maven for Dependency Management
@@ -21,6 +21,7 @@ Reporting: Extent Reports
 ## Project Structure
 
 📂 JavaAppiumSeleniumPOMFramework
+
 │-- 📂 src
 │   ├── 📂 main
 │   │   ├── 📂 java
@@ -46,9 +47,13 @@ Installation
 
 ## Clone the repository:
 git clone https://github.com/vikashnarayan01/JavaAppiumSeleniumPOMFramework.git
+
 cd JavaAppiumSeleniumPOMFramework
+
 Install dependencies:
+
 mvn clean install
+
 Start the Appium server before running mobile tests.
 
 ## Run All the tests
